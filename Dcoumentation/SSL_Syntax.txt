@@ -1,0 +1,86 @@
+ShellOS Scripting Language (SSL) Syntax Reference
+==============================================
+
+File Extension: .ssl
+Interpreter: ssl.py
+
+COMMENTS
+--------
+# This is a comment
+# Comments start with # and are ignored by the interpreter
+
+PRINTING MESSAGES
+-----------------
+print "Hello World"
+print variable_name
+print "The value is:" variable_name
+
+Prints text to the console. Can print literal strings (in quotes) or variables.
+Multiple arguments are joined with spaces.
+
+VARIABLES
+---------
+var name = value
+set name = value
+
+Creates or updates a variable. Value can be:
+- Numbers: var x = 42
+- Strings: var name = "John"
+- Other variables: var copy = original_var
+- Expressions: var sum = x + y (basic string concatenation)
+
+RUNNING PYTHON APPS
+-------------------
+run filename.py
+run "path/to/script.py"
+
+Executes a Python script using the system's Python interpreter.
+The script runs in a separate process and its output is displayed.
+
+INPUT FROM USER
+---------------
+input variable_name
+
+Reads a line of input from the user and stores it in the specified variable.
+
+EXAMPLES
+--------
+
+# Hello World program
+print "Hello, ShellOS Scripting Language!"
+
+# Using variables
+var greeting = "Hello"
+var name = "World"
+print greeting name
+
+# Running a Python script
+run "System64/programs/calc.py"
+
+# User input
+print "Enter your name:"
+input user_name
+print "Hello," user_name
+
+# Simple calculator
+var x = 10
+var y = 20
+print "Sum:" x "+" y "=" x + y
+
+SYNTAX RULES
+------------
+- Commands are case-insensitive (print, PRINT, Print all work)
+- Strings must be enclosed in single or double quotes
+- Variable names cannot contain spaces
+- Each command must be on its own line
+- Empty lines and comments are ignored
+- Files must have .ssl extension
+
+ERROR HANDLING
+--------------
+- Unknown commands will show an error
+- Missing files will show an error
+- Syntax errors will show line numbers
+
+To run a .ssl file:
+python ssl.py your_script.ssl

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #2c2c2c; 
+            color: #e0e0e0; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #383838; 
+            padding: 40px 30px;
+            border-radius: 20px; 
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); 
+            max-width: 500px;
+            width: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.05); 
+        }
+
+        h1 {
+            font-weight: 700;
+            color: #ffffff; 
+            margin-bottom: 25px;
+            font-size: 2.2em;
+            letter-spacing: 0.5px;
+        }
+
+
+        .search-form {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .search-input {
+            width: 80%;
+            padding: 14px 20px;
+            border: 1px solid #555;
+            border-radius: 12px;
+            background-color: #4a4a4a; 
+            color: #f0f0f0;
+            font-size: 1.1em;
+            outline: none;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .search-input:focus {
+            border-color: #6272a4; 
+            box-shadow: 0 0 0 3px rgba(98, 114, 164, 0.3); 
+        }
+
+        .search-input::placeholder {
+            color: #bbb;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .search-input {
+                font-size: 1em;
+                padding: 12px 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ShellOS Internet</h1>
+        <form action="https://www.google.com/search" method="get" class="search-form">
+            <input type="text" name="q" placeholder="Search Google" class="search-input" autofocus>
+        </form>
+    </div>
+</body>
+</html>
