@@ -12,8 +12,8 @@ ShellOS is a basic OS-Like non-bootable enviroment made in Python for Windows x6
 - [Prerequisites](#prerequisites)
 - [Setup](#setup)
 - [Filesystem Layout](#filesystem-layout)
-- [ShellOS Packaging Tool](#spt)
-- [ShellOS Scripting Language](#ShellOS-Scripting-Language)
+- [ShellOS Packaging Tool](#shellos-packaging-tool)
+- [ShellOS Scripting Language](#shellos-scripting-language)
 - [Known Limitations](#known-limitations)
 
 ## Features 
@@ -56,6 +56,7 @@ To Setup via the Portable Zip download the .zip from the releases labeled ShellO
 
 ## Filesystem Layout
 ShellOS's root Filesystem folder is layed out fairly similar to Windows 
+```
 +---Dcoumentation
 +---SYSTEM
 |   +---Graphical_Shell
@@ -83,8 +84,9 @@ ShellOS's root Filesystem folder is layed out fairly similar to Windows
     \---System64
 requirements.txt
 ShellOS.py
+```
 
-## SPT
+## ShellOS Packaging Tool
 SPT is the ShellOS package manager for ShellOS, it is very limited and packages are hosted in the ShellOS-Packages repo install or uninstall packages using SPT Install or SPT Uninstall 
 
 ## ShellOS Scripting Language 
@@ -95,6 +97,5 @@ Syntax can be found in the SSL Folder in System64
 - ShellOS Scripting Language is very limited
 - os runs slower
 - ShellOS Internet functionality is limited
-
 </div>
 
