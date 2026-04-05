@@ -1,0 +1,10 @@
+# Test SSL Script
+print "Welcome to ShellOS Scripting Language!"
+
+var greeting = "Hello"
+var name = "World"
+print greeting name
+
+var message = "This is from SSL!"
+print "Running echo.py with message:" message
+run "System64/echo.py" message

@@ -1,0 +1,11 @@
+psutil
+Pillow 
+pygame
+py-cpuinfo
+PyQt5
+PyQtWebEngine
+tkcalendar
+keyboard
+pywin32
+customtkinter
+mutagen
