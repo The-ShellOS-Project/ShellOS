@@ -1,11 +1,19 @@
 <div align="center">
-<img src="https://github.com/user-attachments/assets/56b16f14-efc8-4bec-9d7f-9fd81e67fb2c"
+<img src="https://github.com/user-attachments/assets/98747598-8d35-4f33-8692-f07c6b0509b2"
   width="500"
 />
 
-# ShellOS
+# ShellOS: Python Edition
 </div>
 ShellOS is a basic OS-Like non-bootable enviroment made in Python for Windows x64 combines elements of Windows and Linux into one, it has it's own Shell and Commands, its own GUI
+
+# Editions
+ShellOS: Python Edition is the original PC version and the main version of ShellOS other editions include:
+
+[Fuade Edition](https://github.com/The-ShellOS-Project/ShellOS-Fuade-Edition)
+
+
+
 
 ## Table of Contents
 - [Features](#features)
